@@ -17,41 +17,42 @@ import static org.openqa.selenium.support.locators.RelativeLocator.with;
 import java.time.Duration;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class RightClick {
+public class ExplicitWait {
 
-	public static String browser = "firefox"; // External Configuration - XLS,CSV
+	public static String browser = "Firefox"; // External Configuration - XLS,CSV
 	public static WebDriver driver;
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		if (browser.equals("firefox")) {
-		    WebDriverManager.firefoxdriver().setup();
-		    driver = new FirefoxDriver();
+		if (browser.equals("Firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 		} else if (browser.equals("chrome")) {
-		    WebDriverManager.chromedriver().setup();
-		    driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+
 		} else if (browser.equals("edge")) {
-		    WebDriverManager.edgedriver().setup();
-		    driver = new EdgeDriver();
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+
 		}
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		driver.get("https://jqueryui.com/slider/#colorpicker");
+		driver.get("https://www.ebay.com/");
 		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		WebElement frame = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#content iframe")));
-		driver.switchTo().frame(frame);
-
-		WebElement rectangle = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("swatch")));
-
+		WebElement element = driver.findElement(By.xpath("/html/body/div[7]/div[1]/div/div[1]/ul/li[3]/a"));
 		Actions action = new Actions(driver);
-		action.contextClick(rectangle).perform();
-
-		
+		action.moveToElement(element).perform();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[7]/div[1]/div/div[1]/ul/li[3]/div[2]/div[1]/nav[2]/ul/li[1]/a"))).click();
+				
+		driver.close();
 	}
 
 }
