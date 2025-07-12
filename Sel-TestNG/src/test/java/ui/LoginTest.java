@@ -32,7 +32,7 @@ public class LoginTest {
 
 	}
 
-	@Test(priority = 1, description = "This is a login test!")
+	@Test(priority = 1, description = "This is a login test!", groups = "regression")
 	public void loginTest() {
 		System.out.println("Login is sucessful");
 	}
