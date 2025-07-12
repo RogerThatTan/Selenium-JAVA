@@ -7,6 +7,7 @@
 			<class name="ui.LoginTest" />
 			<class name="ui.VerifyTitleTest" />
 			<class name="ui.GroupDemoTest" />
+			<class name="ui.GroupDemoTest2" />
 		</classes>
 	</test> <!--
 	Test -->

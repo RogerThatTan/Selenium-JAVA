@@ -3,6 +3,6 @@
 <suite name="Master Suite">
  <suite-files>
  	<suite-file path="./testng.xml"></suite-file>
- 	<suite-file path="./regression.xml"></suite-file>
+ 	<suite-file path="./testng1.xml"></suite-file>
  </suite-files>
 </suite> <!-- Suite -->

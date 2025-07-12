@@ -1,45 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-12T18:08:09 BDT" name="Regression Suite" finished-at="2025-07-12T18:08:09 BDT" duration-ms="53">
+  <suite started-at="2025-07-12T21:49:30 BDT" name="Default suite" finished-at="2025-07-12T21:49:31 BDT" duration-ms="63">
     <groups>
-      <group name="bvt">
-        <method signature="GroupDemoTest.bTest3()[pri:0, instance:ui.GroupDemoTest@233795b6]" name="bTest3" class="ui.GroupDemoTest"/>
-      </group> <!-- bvt -->
-      <group name="user-registration">
-        <method signature="GroupDemoTest.bTest3()[pri:0, instance:ui.GroupDemoTest@233795b6]" name="bTest3" class="ui.GroupDemoTest"/>
-        <method signature="GroupDemoTest.aTest1()[pri:1, instance:ui.GroupDemoTest@233795b6]" name="aTest1" class="ui.GroupDemoTest"/>
-        <method signature="GroupDemoTest.bTest2()[pri:2, instance:ui.GroupDemoTest@233795b6]" name="bTest2" class="ui.GroupDemoTest"/>
-      </group> <!-- user-registration -->
-      <group name="regression">
-        <method signature="GroupDemoTest.bTest3()[pri:0, instance:ui.GroupDemoTest@233795b6]" name="bTest3" class="ui.GroupDemoTest"/>
-        <method signature="GroupDemoTest.aTest1()[pri:1, instance:ui.GroupDemoTest@233795b6]" name="aTest1" class="ui.GroupDemoTest"/>
-        <method signature="LoginTest.loginTest()[pri:1, instance:ui.LoginTest@10683d9d]" name="loginTest" class="ui.LoginTest"/>
-        <method signature="GroupDemoTest.bTest2()[pri:2, instance:ui.GroupDemoTest@233795b6]" name="bTest2" class="ui.GroupDemoTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-07-12T18:08:09 BDT" name="Regression" finished-at="2025-07-12T18:08:09 BDT" duration-ms="53">
-      <class name="ui.GroupDemoTest">
-        <test-method signature="bTest3()[pri:0, instance:ui.GroupDemoTest@233795b6]" started-at="2025-07-12T18:08:09 BDT" name="bTest3" finished-at="2025-07-12T18:08:09 BDT" duration-ms="2" status="PASS">
+    <test started-at="2025-07-12T21:49:30 BDT" name="Default test" finished-at="2025-07-12T21:49:31 BDT" duration-ms="63">
+      <class name="ui.DataProviderDemoTest">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@34e9fd99]" started-at="2025-07-12T21:49:31 BDT" name="test" data-provider="dataset" finished-at="2025-07-12T21:49:31 BDT" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest3 -->
-        <test-method signature="aTest1()[pri:1, instance:ui.GroupDemoTest@233795b6]" started-at="2025-07-12T18:08:09 BDT" name="aTest1" finished-at="2025-07-12T18:08:09 BDT" duration-ms="1" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@34e9fd99]" started-at="2025-07-12T21:49:31 BDT" name="test" data-provider="dataset" finished-at="2025-07-12T21:49:31 BDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aTest1 -->
-        <test-method signature="bTest2()[pri:2, instance:ui.GroupDemoTest@233795b6]" started-at="2025-07-12T18:08:09 BDT" name="bTest2" finished-at="2025-07-12T18:08:09 BDT" duration-ms="1" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@34e9fd99]" started-at="2025-07-12T21:49:31 BDT" name="test" data-provider="dataset" finished-at="2025-07-12T21:49:31 BDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest2 -->
-      </class> <!-- ui.GroupDemoTest -->
-      <class name="ui.LoginTest">
-        <test-method signature="loginTest()[pri:1, instance:ui.LoginTest@10683d9d]" started-at="2025-07-12T18:08:09 BDT" name="loginTest" description="This is a login test!" finished-at="2025-07-12T18:08:09 BDT" duration-ms="10" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@34e9fd99]" started-at="2025-07-12T21:49:31 BDT" name="test" data-provider="dataset" finished-at="2025-07-12T21:49:31 BDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- ui.LoginTest -->
-    </test> <!-- Regression -->
-  </suite> <!-- Regression Suite -->
+        </test-method> <!-- test -->
+        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@34e9fd99]" started-at="2025-07-12T21:49:31 BDT" name="test1" data-provider="dataset1" finished-at="2025-07-12T21:49:31 BDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@34e9fd99]" started-at="2025-07-12T21:49:31 BDT" name="test1" data-provider="dataset1" finished-at="2025-07-12T21:49:31 BDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@34e9fd99]" started-at="2025-07-12T21:49:31 BDT" name="test1" data-provider="dataset1" finished-at="2025-07-12T21:49:31 BDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- ui.DataProviderDemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
