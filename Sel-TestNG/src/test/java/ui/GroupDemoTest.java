@@ -1,5 +1,6 @@
 package ui;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeClass;
@@ -49,6 +50,7 @@ public class GroupDemoTest extends CommonDataSetup {
 	@Test(groups = "bvt")
 	public void bTest4() {
 		System.out.println("test4");
+		Assert.assertTrue(false);
 	}
 
 }
